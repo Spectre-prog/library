@@ -828,6 +828,9 @@ footer {
     height: auto;
     margin-right: 5px;
   }
+  .nav-links {
+    margin-bottom: 7px;
+  }
 }
 
 /* Responsive Styles */
@@ -861,7 +864,6 @@ footer {
     transition: var(--transition);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    margin-bottom: 75px;
   }
 
   .nav-links.active {
