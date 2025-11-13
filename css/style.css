@@ -53,12 +53,8 @@ header {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: var(--transition);
-  font-size: 13px;
 }
 
-header a {
-  font-size: 1.2em;
-}
 header.scrolled {
   background-color: var(--header-scrolled);
   padding: 0.8rem 5%;
@@ -178,7 +174,6 @@ header.scrolled {
   overflow: hidden;
   background-image: url("https://i.postimg.cc/GtdtT4kc/bulb3.jpg"); /* default light mode */
   min-height: 100vh;
-  margin-top: 75px;
 }
 
 .dark-mode .hero {
@@ -195,7 +190,7 @@ header.scrolled {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
@@ -810,53 +805,52 @@ footer {
 
 @media (max-width: 768px) {
   header a {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Reduce font size */
   }
 }
 
+/* Optional: Further reduce font size for even smaller screens */
 @media (max-width: 480px) {
   header a {
     font-size: 1em;
   }
 
   header a.logo {
-    font-size: 1.4em;
+    font-size: 20px;
   }
 
   header a.logo img.small-image {
-    width: 25px;
+    width: 30px;
     height: auto;
     margin-right: 5px;
   }
-  .nav-links {
-    margin-bottom: 3px;
-  }
 }
 
-@media (max-width: 412px) {
-  .nav-links {
-    margin-bottom: 8px;
-  }
-}
-
-/* Responsive Styles */
+/* Adjust hero content position on smaller screens */
 @media (max-width: 1024px) {
+  .hero-content {
+    margin-top: 3rem; /* pushes content below navbar */
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
   .philosophy-card,
   .course-card {
     width: calc(50% - 2rem);
   }
-  header a {
-    font-size: 1em;
-  }
+
   .admin-card {
     width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 768px) {
-  header a {
-    font-size: 1em;
-  }
   .nav-links {
     position: fixed;
     top: 80px;
@@ -885,7 +879,7 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .hero-content p {
@@ -913,9 +907,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-  header a {
-    font-size: 1em;
-  }
   .philosophy-card,
   .course-card,
   .admin-card {
