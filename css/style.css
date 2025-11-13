@@ -178,7 +178,7 @@ header.scrolled {
   overflow: hidden;
   background-image: url("https://i.postimg.cc/GtdtT4kc/bulb3.jpg"); /* default light mode */
   min-height: 100vh;
-  margin-top: 65px;
+  margin-top: 80px;
 }
 
 .dark-mode .hero {
