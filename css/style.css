@@ -833,6 +833,12 @@ footer {
   }
 }
 
+@media (max-width: 412px) {
+  .nav-links {
+    margin-bottom: 8px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .philosophy-card,
