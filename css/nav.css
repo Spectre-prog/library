@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: var(--header-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+.small-image {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+header a {
+  font-size: 1.5em;
+  font-weight: 750;
+  text-decoration: none;
+  color: #3da8d8;
+}
+#nav-actions {
+  display: flex;
+  align-items: center;
+}
+.logout-icon {
+  background: 0 0;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.logout-icon .px {
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logout-icon:hover {
+  color: #3da8d8;
+}
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.logout-btn i {
+  font-size: 1.35rem;
+}
+.logout-btn:hover {
+  color: #3da8d8;
+}
+
+@media (max-width: 480px) {
+  header a {
+    font-size: 1em;
+  }
+
+  header a.logo {
+    font-size: 1em;
+  }
+
+  header a.logo img.small-image {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+  }
+}
