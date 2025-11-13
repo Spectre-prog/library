@@ -860,7 +860,7 @@ footer {
     transition: var(--transition);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    margin-bottom: 50px;
+    margin-bottom: 80x;
   }
 
   .nav-links.active {
